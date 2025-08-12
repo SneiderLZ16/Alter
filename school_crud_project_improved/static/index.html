@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"/><title>School CRUD - Improved</title><link rel="stylesheet" href="/static/styles.css"/></head>
+<body>
+  <h1>School CRUD - Improved</h1>
+  <p>Simple UI for testing CRUD and CSV upload.</p>
+  <section>
+    <h2>Students</h2>
+    <form id="studentForm">
+      <input name="first_name" placeholder="First name" required/>
+      <input name="last_name" placeholder="Last name" required/>
+      <input name="email" placeholder="email" required/>
+      <input name="date_of_birth" placeholder="YYYY-MM-DD"/>
+      <button type="submit">Add Student</button>
+    </form>
+    <button id="uploadStudentsBtn">Upload students CSV</button>
+    <input type="file" id="studentsCsv" style="display:none"/>
+    <div id="studentsList"></div>
+  </section>
+  <section>
+    <h2>Courses</h2>
+    <form id="courseForm">
+      <input name="code" placeholder="Code (eg. MAT101)" required/>
+      <input name="name" placeholder="Name" required/>
+      <input name="credits" placeholder="Credits" type="number"/>
+      <button type="submit">Add Course</button>
+    </form>
+    <div id="coursesList"></div>
+  </section>
+  <section>
+    <h2>Enrollments</h2>
+    <form id="enrollForm">
+      <input name="student_email" placeholder="Student email" required/>
+      <input name="course_code" placeholder="Course code" required/>
+      <button type="submit">Enroll</button>
+    </form>
+    <button id="uploadEnrollmentsBtn">Upload enrollments CSV</button>
+    <input type="file" id="enrollmentsCsv" style="display:none"/>
+    <div id="enrollList"></div>
+  </section>
+<script src="/static/app.js"></script>
+</body>
+</html>
