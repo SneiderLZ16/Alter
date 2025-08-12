@@ -45,10 +45,4 @@ python app.py
 
 6. Open your browser at http://127.0.0.1:5000/
 
-## What changed / improvements
-- All source files documented in English with docstrings and helpful comments.
-- `utils.py` contains CSV validation and normalization helpers.
-- Bulk sample CSV with ~100 students and enrollments for testing.
-- `docs/` contains MER.md, MER.drawio (editable XML), and a "guion" (defense Q&A) in English and Spanish.
 
-If you want any additional features (authentication, deployment script, PostgreSQL migration), tell me and I will add them.
